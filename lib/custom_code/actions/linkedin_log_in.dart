@@ -20,7 +20,7 @@ Future<dynamic> linkedinLogIn(BuildContext context) async {
     scope: ['openid', 'email', 'w_member_social', 'profile'],
   );
 
-  SignInWithLinkedIn.signIn(
+  await SignInWithLinkedIn.signIn(
     context,
     config: _linkedInConfig,
     onGetAuthToken: (data) {
